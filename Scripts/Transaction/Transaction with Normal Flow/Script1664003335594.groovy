@@ -67,3 +67,17 @@ WebUI.verifyElementPresent(findTestObject('ObjectWebSpy/05-Confirmation Page/txt
 
 WebUI.click(findTestObject('ObjectWebSpy/05-Confirmation Page/btn_Finish'))
 
+WebUI.waitForElementPresent(findTestObject('ObjectWebSpy/06-Thank you Page/img_Your order has been dispatched'), 0)
+
+WebUI.verifyElementPresent(findTestObject('ObjectWebSpy/06-Thank you Page/txt_Checkout Complete'), 0)
+
+WebUI.verifyElementPresent(findTestObject('ObjectWebSpy/06-Thank you Page/txt_h2_THANK YOU FOR YOUR ORDER'), 0)
+
+WebUI.verifyElementPresent(findTestObject('ObjectWebSpy/06-Thank you Page/txt_Your order has been dispatched'), 0)
+
+WebUI.click(findTestObject('ObjectWebSpy/06-Thank you Page/btn_Back Home'))
+
+WebUI.waitForElementPresent(findTestObject('ObjectWebSpy/02-Product Page/txt_Products Page'), 0)
+
+WebUI.closeBrowser()
+
